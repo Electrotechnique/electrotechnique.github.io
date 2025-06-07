@@ -4,6 +4,9 @@
  
 
 # <a name="news"></a> Latest News
+**7th June 2025** - TSynth PCB files completely available
+PCB files for the main PCB are [now in Github.](https://github.com/Electrotechnique/TSynth-Teensy4.1/tree/master/Mechanical) TSynth is now completely open source. You may produce and sell your own TSynths as you wish.
+
 **10th December 2024** - Happy December from Electrotechnique!
 ![A snowy landscape inspired by Pieter Bruegel the Elder with a synthesizer](BruegelSynth.png)
 
