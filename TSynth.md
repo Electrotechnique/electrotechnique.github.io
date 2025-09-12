@@ -10,19 +10,19 @@
 The pcb and front panel are available from Tindie.com with SMD 4067 multiplexers, 6N138 opto-isolator, capacitors and resistors fitted. The entire cost of parts to build TSynth will be around $99 if you buy components from the cheaper suppliers and the build time around two hours to solder. Plans for a 3D printed/laser cut enclosure are also available.
 Questions: info@electrotechnique.cc
 
-## TSYNTH PCB FILES ARE NOW AVAILABLE
+## **** TSYNTH PCB FILES ARE NOW AVAILABLE ****
 KiCAD PCB files are availbale in Electrotechnique's [Github repository](https://github.com/Electrotechnique/TSynth-Teensy4.1/tree/master/Mechanical)
 
-
-## RESELLERS
- ![Coq au Lores](coq.png)	[Coq Au Lo-Res - Germany and Europe](https://www.coqaulores.de/produkt/electrotechnique-tsynth-pcb-front-panel-pack/)
+---
+# ~RESELLERS~
+ ![Coq au Lores](coq.png)	[~Coq Au Lo-Res - Germany and Europe~](https://www.coqaulores.de/produkt/electrotechnique-tsynth-pcb-front-panel-pack/)
  
- ![ALS](als.png)		[AnalogLabSwiss - Switzerland and Europe](https://www.etsy.com/fr/shop/AnalogLabSwiss)
+ ![ALS](als.png)		[~AnalogLabSwiss - Switzerland and Europe~](https://www.etsy.com/fr/shop/AnalogLabSwiss)
  
- ![Inpublic](inpublic.png)		[Inpublic - NY, USA](https://shop.inpublic.space/)
+ ![Inpublic](inpublic.png)		[~Inpublic - NY, USA~](https://shop.inpublic.space/)
  
 ---
-[![Bulk orders for resellers available on Tindie](tindie-logo.png "Bulk Orders - Worldwide")](https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-synth-bulk-orders/)  [Bulk orders for resellers available on Tindie](https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-synth-bulk-orders/)
+[![~Bulk orders for resellers available on Tindie~](tindie-logo.png "Bulk Orders - Worldwide")](https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-synth-bulk-orders/)  [~Bulk orders for resellers available on Tindie~](https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-synth-bulk-orders/)
 
 [Discussion forum](https://github.com/ElectroTechnique/electrotechnique.github.io/discussions) 
 
