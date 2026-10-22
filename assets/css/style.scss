@@ -1,0 +1,94 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* ==========================================================
+   Electrotechnique – fluid layout override for Tactile
+   Keeps the theme's look; replaces the fixed 620px column.
+   ========================================================== */
+
+:root {
+  --page-max: 1200px;        /* widest the page container grows */
+  --text-max: 78ch;          /* comfortable line length for prose */
+  --gutter: clamp(16px, 4vw, 56px);
+}
+
+/* Fluid container instead of width: 620px */
+.inner {
+  width: auto;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  box-sizing: border-box;
+}
+
+/* Theme's header background image is 1000px-ish and centred;
+   let the page background carry across wide screens instead */
+#container {
+  background-size: auto;
+  min-height: 100vh;
+}
+
+/* Images: scale with the column, never overflow */
+#container .inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo / banner links at the top of each page */
+#main_content > p:first-child img {
+  width: min(100%, 640px);
+}
+
+/* Keep reading text to a sensible measure; media can stay wide */
+#main_content > p,
+#main_content > ul,
+#main_content > ol,
+#main_content > h1,
+#main_content > h2,
+#main_content > h3,
+#main_content > h4,
+#main_content > blockquote {
+  max-width: var(--text-max);
+}
+
+/* ...but paragraphs that hold images (hero shots, logos) use the full width */
+#main_content > p:has(img) {
+  max-width: none;
+}
+
+/* Fluid headings */
+h1 { font-size: clamp(24px, 2.6vw, 34px); line-height: 1.25; }
+h2 { font-size: clamp(20px, 2vw, 24px); }
+
+/* Top navigation line (the "MOMENTUM - TSYNTH - NEWS - BUY" paragraph) */
+#main_content > p:nth-child(2) {
+  max-width: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Image tables (e.g. side-by-side photos on Momentum page) */
+table { table-layout: fixed; }
+table img { display: block; width: 100%; height: auto; }
+
+/* Code blocks scroll instead of stretching the page */
+pre { max-width: 100%; overflow-x: auto; }
+
+/* Embedded video stays responsive */
+.youtube, .vimeo { position: relative; max-width: 100%; }
+.youtube iframe, .vimeo iframe { max-width: 100%; }
+
+/* Wide screens: let the content breathe a bit more */
+@media (min-width: 1400px) {
+  :root { --page-max: 1320px; --text-max: 85ch; }
+}
+
+/* Phones: tighten gutters, drop the hard-coded 94% from the theme */
+@media (max-width: 767px) {
+  .inner { width: auto; padding: 0 16px; }
+  #main_content > p:nth-child(2) { gap: 0.25em 1em; }
+}
