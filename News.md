@@ -5,6 +5,36 @@ body_class: page-news
 ---
 
 # <a name="news"></a> Latest News
+**16th November 2026** - I want to announce significant firmware updates for both synths. I'm sure you've all been following developments with AI and coding in particular. I decided to have another look at firmware for both synths and see if Claude Code could improve and add features. I'm very impressed with the results. TSynth is now at version V3.01 and Momentum at V2.00. If you want a more detailed summary of the changes made, the release pages will lead you to it, but briefly:
+
+![TSynths and Momentums](SynthFamily2026.jpg)
+
+**TSynth V3.01** - [release page](https://github.com/Electrotechnique/TSynth-Teensy4.1/releases/tag/V3.01)
+
+- Considerable improvements to overall efficiency, CPU load and removal of aliasing and unwanted noise in sound generation, plus bug fixes. Display speed better.
+- Less latency between note on and sound, much tighter.
+- Filter has various improvements (less distortion), key tracking works properly.
+- Stereo ensemble effect rewritten, less noise, improved effect.
+- Sound levels on filter, noise generator and volume improved.
+- Oscilloscope works properly and is actually useful now.
+- Pick-up setting works properly (turn a pot, sound changes when current value is met by pot – 'picked-up', instead of jumping).
+- Slight differences in the display used in builds caused inverted colour, distortion etc. - these can be chosen in 'Settings' menu now (contact me if your display still causes problems after update.)
+
+**Momentum V2.00** - [release page](https://github.com/Electrotechnique/Momentum/releases/tag/V2.00)
+
+- Same improvements to sound generation as TSynth.
+- Reverb now stereo, ensemble and reverb have two extra parameters.
+- Arpeggiator and sequencer various bug fixes.
+- Firmware can be updated from SD card (update to V2.00 first over USB.)
+
+Stored patches will work as normal, cutoff frequency may need readjusting in some cases but still sound largely the same. Why not get that TSynth out again and give it a try? Any bugs or problems, please contact me.
+
+A further exciting possibility is alternative sound engines. This is particularly good for Momentum, as the flexibility of the four encoders and large screen make the user interface easier to adapt. I think what has happened to M-Vave FM-1 with many user-made firmwares, is entirely possible for Momentum (and even TSynth.) In fact there is now an [alternative firmware for Momentum with the Dexed FM synth engine](https://github.com/Electrotechnique/Momentum-Dexed/releases/tag/v1.00). If you've got Momentum, give it a try! This isn't extensively tested but yes it plays DX7 patches with ensemble and reverb effects, arpeggiator and sequencer, and can be accessed via Dexed on the desktop.
+
+![Momentum running the Dexed FM firmware](MomentumDexed.jpg)
+
+Over the last couple of years, I've been working on analogue-based designs and hope to release some things next year. Thanks for your interest and enthusiasm since 2020.
+
 **7th June 2025** - TSynth PCB files completely available
 PCB files for the main PCB are [now in Github.](https://github.com/Electrotechnique/TSynth-Teensy4.1/tree/master/Mechanical) TSynth is now completely open source. You may produce and sell your own TSynths as you wish.
 
