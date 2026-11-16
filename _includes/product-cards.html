@@ -1,0 +1,32 @@
+<div class="cards">
+{% for p in site.data.products %}
+  <article class="card">
+    <a class="card-img{% if p.contain %} contain{% endif %}" href="{{ p.page | default: p.options[0].tindie | relative_url }}">
+      <img src="{{ p.image | relative_url }}" alt="{{ p.name }}" loading="lazy">
+    </a>
+    <div class="card-body">
+      {% if p.status == 'soldout' %}<span class="badge soldout">Sold out</span>{% elsif p.badge %}<span class="badge">{{ p.badge }}</span>{% endif %}
+      <h3>{% if p.page %}<a href="{{ p.page | relative_url }}" style="color:inherit;text-decoration:none">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+      <p>{{ p.blurb }}</p>
+      {% if include.compact %}
+        <div class="card-meta">
+          {% if p.page %}<a class="btn btn-outline" href="{{ p.page | relative_url }}">Details</a>{% endif %}
+          <a class="btn" href="{{ '/shop' | relative_url }}#{{ p.name | slugify }}">Buy</a>
+        </div>
+      {% else %}
+        <ul class="variants" id="{{ p.name | slugify }}">
+        {% for o in p.options %}
+          {% assign buy = o.checkout | default: o.tindie %}
+          <li>
+            <span>{{ o.name }}{% if o.price %} &middot; <strong>{{ o.price }}</strong>{% endif %}</span>
+            {% if p.status == 'soldout' %}<span class="badge soldout" style="margin:0">Sold out</span>
+            {% else %}<a class="btn" href="{{ buy }}"{% unless o.checkout %} target="_blank" rel="noopener"{% endunless %}>{% if o.checkout %}Buy now{% else %}Buy on Tindie{% endif %}</a>{% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+        {% if p.page %}<div class="card-meta"><a href="{{ p.page | relative_url }}">Specs, manual &amp; firmware &rarr;</a></div>{% endif %}
+      {% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>

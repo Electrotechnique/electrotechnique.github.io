@@ -1,20 +1,30 @@
-[![](Logo.png)](https://electrotechnique.github.io)
+---
+layout: default
+title: TSynth
+---
 
-[MOMENTUM](https://electrotechnique.cc/Momentum)    -    [TSYNTH](https://electrotechnique.cc/TSynth)     -    [NEWS](https://electrotechnique.cc/News) -    [BUY](https://www.tindie.com/stores/electrotechnique/)
-
-
-![](TSynth.jpg)
-
-# TSynth is a Teensy 4.1 based synthesizer using PJRC Audio Board and Audio Lib
+<section class="hero">
+  <img src="TSynth.jpg" alt="TSynth">
+  <div>
+    <div class="eyebrow">Open source DIY synth</div>
+    <h1>TSynth</h1>
+    <p class="lede">A Teensy 4.1 based synthesizer using the PJRC Audio Board and Audio Library.</p>
+    <div class="btn-row">
+      <a class="btn" href="shop#tsynth-pcb-front-panel">Buy PCB &amp; panel</a>
+      <a class="btn btn-outline" href="https://github.com/ElectroTechnique/TSynth-Teensy4.1/tree/master/Documents">Build guide &amp; manual</a>
+      <a class="btn btn-outline" href="https://github.com/ElectroTechnique/TSynth-Teensy4.1/tree/master/Firmware">Firmware</a>
+    </div>
+  </div>
+</section>
 
 The pcb and front panel are available from Tindie.com with SMD 4067 multiplexers, 6N138 opto-isolator, capacitors and resistors fitted. The entire cost of parts to build TSynth will be around $99 if you buy components from the cheaper suppliers and the build time around two hours to solder. Plans for a 3D printed/laser cut enclosure are also available.
 Questions: info@electrotechnique.cc
 
-## **** TSYNTH PCB FILES ARE NOW AVAILABLE ****
-KiCAD PCB files are availbale in Electrotechnique's [Github repository](https://github.com/Electrotechnique/TSynth-Teensy4.1/tree/master/Mechanical)
+## TSynth PCB files are now available
+KiCAD PCB files are available in Electrotechnique's [Github repository](https://github.com/Electrotechnique/TSynth-Teensy4.1/tree/master/Mechanical)
 
 ---
-# ~RESELLERS~
+# Resellers {#resellers}
  ![Coq au Lores](coq.png)	[~Coq Au Lo-Res - Germany and Europe~](https://www.coqaulores.de/produkt/electrotechnique-tsynth-pcb-front-panel-pack/)
  
  ![ALS](als.png)		[~AnalogLabSwiss - Switzerland and Europe~](https://www.etsy.com/fr/shop/AnalogLabSwiss)
@@ -41,7 +51,9 @@ Build Guide and User Manual for T4.1 (PCB Rev 1.3) are here - [Docs](https://git
 - See a [Youtube demo](https://www.youtube.com/watch?v=uCA2L7CeWSE)
 - See a [Youtube demo](https://www.youtube.com/watch?v=_jDlkQcBM0Y) by someone with some talent (plus several more demos)
 
-Oscillators
+<div class="specs" markdown="1">
+
+### Oscillators
 - 12 voice polyphony (last note priority), two oscillators per voice, velocity sensitive, detunable with +/- 2 octaves range, Sine/Sample & Hold (like tuned noise)/Square/Sawtooth/Ramp/PWM/Var Triangle/User waveforms and level. Square, Sawtooth and Pulse waves are band-limited.
 - Pulse Width/Var Triangle can be set for each oscillator with PWM by dedicated LFO or from the filter envelope
 - Pink or white noise level
@@ -53,29 +65,32 @@ Oscillators
 - Monophonic mode - first, last, highest, lowest note priorities.
 - Polyphonic Glide with variable time
 
-Filter
+### Filter
 - State variable 12dB filter (SVF) with continuous mix between LP and HP (provides notch filter) and BP
 - Cutoff freq and resonance
 - Cutoff can be modulated by dedicated exponential ADSR envelope (+/-), dedicated LFO
 - LFO has same waveforms as pitch LFO (can be retriggered by note on)  and rate can be set to match MIDI clock (tempo) with variable time division (1,3/4,1/2,1/4,1/8...)
 
-Amplifier
+### Amplifier
 - Dedicated ADSR envelope with exponential attack (adjustable), decay and release stages
 - Volume
 - Effect amount and mix  - currently for stereo ensemble chorus rate and mix but could be set up to allow choices in Settings menu
 
-Patch & Program Buttons
+### Patch & Program Buttons
 - Encoder with button for data entry, Back button for menu navigation
 - Save and Delete buttons for storing patches
 - Holding Settings initialises the current patch to match the panel controls. Holding the Save button takes you into a patch deletion page.
 - Settings Menu - Velocity curve, Pitch Bend and Mod Wheel range, VU Meter, oscilloscope display, bass enhance, MIDI In, Thru and Out options.
 
-MIDI
+### MIDI
 - USB HOST MIDI Class Compliant (direct connection to MIDI controller, no PC needed)
 - USB Client MIDI In from PC
 - MIDI In 5 pin DIN
 - MIDI Thru/Out 5 pin DIN - configurable as a thru with filtering options or an out
 
-Audio
+### Audio
 - SGTL5000 Audio Shield 16 bit, 44.1 kHz  Stereo out
 - USB Audio in/out—appears as 16 bit, 44.1 kHz  audio interface on PC
+
+</div>
+

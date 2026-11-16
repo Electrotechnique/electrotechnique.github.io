@@ -1,16 +1,21 @@
-[![](Logo.png)](https://electrotechnique.github.io)
+---
+layout: default
+title: Momentum
+---
 
-[MOMENTUM](https://electrotechnique.cc/Momentum)    -    [TSYNTH](https://electrotechnique.cc/TSynth)     -    [NEWS](https://electrotechnique.cc/News) -    [BUY](https://www.tindie.com/stores/electrotechnique/)
-
-![Momentum](MomentumMockup.png)
-
-## DIY 12-voice virtual analogue polyphonic synthesizer based on [TSynth](https://electrotechnique.cc/TSynth)
-### [Available as a kit and fully built on Tindie](https://www.tindie.com/products/electrotechnique/momentum-12-voice-digital-poly-synth-diy-built/)
-
-### [Momentum User Manual and Build Guide](https://github.com/ElectroTechnique/Momentum/blob/main/Manual/Momentum%20User%20Manual.pdf)
-
-### [Latest firmware](https://github.com/ElectroTechnique/Momentum/releases)
-
+<section class="hero">
+  <img src="MomentumMockup.png" alt="Momentum">
+  <div>
+    <div class="eyebrow">Kit or fully built</div>
+    <h1>Momentum</h1>
+    <p class="lede">DIY 12-voice virtual analogue polyphonic synthesizer based on <a href="TSynth">TSynth</a>.</p>
+    <div class="btn-row">
+      <a class="btn" href="shop#momentum">Buy Momentum</a>
+      <a class="btn btn-outline" href="https://github.com/ElectroTechnique/Momentum/blob/main/Manual/Momentum%20User%20Manual.pdf">User manual &amp; build guide</a>
+      <a class="btn btn-outline" href="https://github.com/ElectroTechnique/Momentum/releases">Latest firmware</a>
+    </div>
+  </div>
+</section>
 
 # Specifications  
 
@@ -29,7 +34,9 @@
   </tr>
 </table>
 
-Oscillators
+<div class="specs" markdown="1">
+
+### Oscillators
 - 12 voice polyphony (last note priority), two oscillators per voice, velocity sensitive, detunable with +/- 2 octaves range, Sine/Sample & Hold (like tuned noise)/Square/Sawtooth/Ramp/PWM/Var Triangle/User waveforms and level. Square, Sawtooth and Pulse waves are band-limited.
 - Pulse Width/Var Triangle can be set for each oscillator with PWM by a dedicated LFO or from the filter envelope
 - Pink or white noise level
@@ -41,41 +48,44 @@ Oscillators
 - Monophonic mode - first, last, highest, lowest note priorities.
 - Polyphonic Glide with variable time
 
-Filter
+### Filter
 - State variable 12dB filter (SVF) with continuous mix between LP and HP (provides notch filter) and BP
 - Cutoff freq and resonance
 - Cutoff can be modulated by dedicated exponential ADSR envelope (+/-), dedicated LFO
 - LFO has same waveforms as pitch LFO (can be retriggered by note on)  and rate can be set to match MIDI clock (tempo) with variable time division (1,3/4,1/2,1/4,1/8...)
 - Key tracking adjustable up to full
 
-Amplifier
+### Amplifier
 - Dedicated ADSR envelope with exponential attack (adjustable), decay and release stages
 
-Effects
+### Effects
 - Stereo ensemble chorus - very good quality with mix and rate control
 - Simple reverb with mix and size
 
-Patch storage
+### Patch storage
 - 8 user-nameable banks with 128 patches in each, stored on SD card
 
-Performance
+### Performance
 - 128 user-nameable performance memories allowing patch, MIDI settings and assignment of the four encoders to the patch parameters
 
-Arppegiator
+### Arpeggiator
 -  Six styles (up, down, bounce, up & down, random, play order), choice of ranges, base octave, tempo and tempo divisions
 -  Syncable to incoming MIDI clock
 
-Sequencer
+### Sequencer
 - Simple step sequencer, length up to 64 notes, 
 - Syncable to incoming MIDI clock
 - 128 user-nameable sequences stored on SD card
 
-MIDI
+### MIDI
 - USB HOST MIDI Class Compliant (direct connection to MIDI controller, no PC needed)
 - USB Client MIDI In from PC
 - MIDI TRS In (type A and B)
 - MIDI TRS Thru/Out (type A)  - configurable as a thru with filtering options or an out
 
-Audio
+### Audio
 - PCM5102A 16 bit, 44.1 kHz  analogue stereo out
 - USB digital audio out, appears as 16 bit, 44.1 kHz audio interface on PC
+
+</div>
+

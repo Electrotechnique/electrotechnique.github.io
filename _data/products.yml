@@ -1,0 +1,58 @@
+# Shop catalogue.
+#
+# For each option, the Buy button uses `checkout` if set, otherwise `tindie`.
+# To sell directly, create a Stripe Payment Link (dashboard.stripe.com → Payment Links,
+# tick "Collect shipping address") and paste its URL into `checkout`.
+# `price` is display text only – the real price is whatever the checkout/Tindie page charges.
+# Set `status: soldout` to grey out an item.
+
+- name: Momentum
+  page: /Momentum
+  image: /MomentumMockup.png
+  contain: true
+  badge: 12-voice poly synth
+  blurb: Teensy MicroMod based 12-voice virtual analogue polysynth with arpeggiator, sequencer, effects and SD patch storage.
+  options:
+    - name: DIY kit
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/momentum-12-voice-digital-poly-synth-diy-built/
+      checkout:
+    - name: Fully built & tested
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/momentum-12-voice-digital-poly-synth-diy-built/
+      checkout:
+
+- name: TSynth PCB & front panel
+  page: /TSynth
+  image: /TSynth.jpg
+  badge: DIY synth
+  blurb: Teensy 4.1 based 12-voice synth. PCB with SMD parts fitted plus front panel – add the through-hole parts and Teensy.
+  options:
+    - name: PCB & front panel pack
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-programmable-poly-synth/
+      checkout:
+    - name: Bulk orders (resellers)
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/tsynth-teensy-based-diy-synth-bulk-orders/
+      checkout:
+
+- name: Plinky Synth
+  image: /ps.jpg
+  badge: Synth
+  blurb: A modified version of the Plinky touch synth, built by Electrotechnique.
+  options:
+    - name: Plinky Synth
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/plinky-synth-from-electrotechnique/
+      checkout:
+
+- name: USB 2.0 Isolator
+  image: /20230808_144628.jpg
+  badge: Accessory
+  blurb: Hi-speed 480 Mbps USB isolator – breaks ground loops between computer and audio gear.
+  options:
+    - name: USB Isolator
+      price:
+      tindie: https://www.tindie.com/products/electrotechnique/usb-isolator-usb-20-hi-speed-480mbps-audio/
+      checkout:
