@@ -1,3 +1,34 @@
 title: Electrotechnique Synthesizers
-theme: jekyll-theme-tactile
-description: DIY Synthesizers
+description: DIY digital polyphonic synthesizers, kits and accessories
+url: https://electrotechnique.cc
+logo: /Logo.png
+plugins:
+  - jekyll-seo-tag
+
+# Site navigation (header)
+nav:
+  - title: Momentum
+    url: /Momentum
+  - title: TSynth
+    url: /TSynth
+  - title: News
+    url: /News
+  - title: Shop
+    url: /shop
+
+contact_email: info@electrotechnique.cc
+tindie_store: https://www.tindie.com/stores/electrotechnique/
+github: https://github.com/ElectroTechnique
+forum: https://github.com/ElectroTechnique/electrotechnique.github.io/discussions
+facebook: https://www.facebook.com/groups/418750379310464
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.zip"
+  - README.md
+include:
+  - TSynthV2_34DISP.zip
+  - TSynth_V2_33_MADCTL_Offset.zip
+  - TSynthV2_34_INVDISP.zip
+  - TSynth_V2_33_MADCTL_MV.zip

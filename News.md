@@ -1,7 +1,8 @@
-[![](Logo.png)](https://electrotechnique.github.io)
-
- [MOMENTUM](https://electrotechnique.cc/Momentum)    -    [TSYNTH](https://electrotechnique.cc/TSynth)     -    [NEWS](https://electrotechnique.cc/News)      -    [BUY](https://www.tindie.com/stores/electrotechnique/)
- 
+---
+layout: default
+title: News
+body_class: page-news
+---
 
 # <a name="news"></a> Latest News
 **7th June 2025** - TSynth PCB files completely available
